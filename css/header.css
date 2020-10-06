@@ -1,0 +1,182 @@
+#gradient-bg-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: radial-gradient(circle, rgba(50,50,50,0.15) 0%, rgba(50,50,50,0.2) 10%, rgba(50,50,50,0.3) 30%, rgba(50,50,50,0.3) 70%, rgba(50,50,50,0.3) 100%);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 25s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	20% {
+		background-position: 100% 50%
+	}
+	40% {
+		background-position: 0% 50%
+	}
+	460% {
+		background-position: 50% 0%
+	}
+	80% {
+		background-position: 50% 100%
+	}
+	100% {
+		background-position: 50% 0%
+	}
+}
+
+#code{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.2;
+}
+
+
+.title-80s{
+	position: relative
+}
+
+.title-80s:before, .title-80s:after{
+	content: 'Roger Cardoso';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.title-80s:before{
+	left: 0px;
+	text-shadow: -3px 0 red !important;
+	animation: tvshow 6s infinite linear alternate-reverse;
+}
+
+.title-80s:after{
+	left: 0px;
+	text-shadow: 3px 0 blue !important;
+	animation: tvshow2 7s infinite linear alternate-reverse;
+}
+
+.title-80s::before {
+  clip: rect(10px, 660px, 70px, 0px);
+}
+
+
+@keyframes tvshow {
+	0% {
+		left: -5px;
+	}
+	0.5% {
+		left: 6px;
+	}
+	1% {
+		left: -6px;
+	}
+	1.5% {
+		left: 5px;
+	}
+	2% {
+		left: -5px;
+	}
+	2.5% {
+		left: 0px
+	} 
+	100% {
+		left: 0px;
+	}
+}
+
+@keyframes tvshow2 {
+	0% {
+		left: 6px;
+	}
+	0.5% {
+		left: -6px;
+	}
+	1% {
+		left: 5px;
+	}
+	1.5% {
+		left: -6px;
+	}
+	2% {
+		left: 5px;
+	}
+	2.5% {
+		left: 0px
+	} 
+	100% {
+		left: 0px;
+	}
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
+#bg-fade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(15,15,15);
+	opacity: 1;
+	animation: fadeInAndOut;
+	animation-duration: 4s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+	z-index: -1;
+}
+
+@keyframes fadeInAndOut{
+	0%{
+		opacity: 1;
+	}
+	0%{
+		opacity: 0.5;
+	}
+}

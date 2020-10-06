@@ -1,0 +1,241 @@
+html, body{
+	min-height: 100vh;
+	background: rgb(35,35,35)
+}
+
+.freeze{
+	pointer-events: none;
+}
+
+.full-screen-pages{
+	width: 100%;
+	max-width: 100%;
+	z-index: 0;
+}
+
+.fspage{
+	padding: 3em 0 4.5em 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	visibility: hidden;
+	z-index: 1;
+	background: #5C5C5C;
+}
+
+.fspage.prev {
+  visibility: visible;
+  position: static;
+  z-index: 1;
+}
+
+.fspage.active {
+  visibility: visible;
+  position:relative;
+  z-index: 3;
+}
+
+.fspage.fixed {
+  visibility: visible;
+  position: fixed;
+  z-index: 2;
+}
+
+#slide-helper {
+  width: 100%;
+  min-height: 101vh;
+}
+#slide-helper > .row {
+  margin-bottom:10px;
+}
+
+.main-content {
+	text-align: center;
+	background: url('../img/stars-bg.png');
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.about-me{
+	background: #4a7b9b;
+}
+
+.contacts{
+	background: #363e55;
+}
+
+.main-content .main-row{
+	border-radius: 5px;
+	padding: 38px;
+	text-align: center;
+	padding-top: 6%;
+	line-height: 1em;
+}
+
+.main-content p{
+	margin-bottom: 0;
+}
+
+.main-content .title{
+	animation: fadeIn;
+	animation-duration: 3s;
+}
+
+.main-content .title, .title-80s:before, .title-80s:after{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 44px;
+	text-shadow: 2px 2px 5px #000;
+	margin-bottom: 0;
+	display: block;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.main-content .sub-title{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 24px;
+	display: inline-block;
+	text-shadow: 2px 2px 5px #000;
+	margin-bottom: 0;
+	display: block;
+}
+
+.main-content .main-text{
+	margin-top: 14px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 10px;
+	display: inline-block;
+	margin-bottom: 0px;
+	text-shadow: 1px 1px 10px #000;
+	line-height: 16px;
+}
+
+.index-link-profile{
+	color: white;
+	text-decoration: underline;
+	transition: all 500ms ease-in-out;
+}
+
+.index-link-profile:hover{
+	color: #5C5C5C;
+	text-shadow: 1px 1px 5px white;
+}
+
+@keyframes arrows{
+	0% {opacity: 0;}
+	20% {opacity: 0.1;}
+    40% {opacity: 0.2;}
+    60% {opacity: 0.3;}
+    80% {opacity: 0.4;}
+    100% {opacity: 0.5;}
+}
+
+.page-down-arrow{
+	font-size: 40px;
+    color: silver;
+    text-shadow: 2px 2px 10px black;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    animation-delay: 2000ms;
+    animation-name: arrows;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+.page-up-arrow{
+	font-size: 40px;
+    color: silver;
+    text-shadow: 2px 2px 10px black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    animation-delay: 2000ms;
+    animation-name: arrows;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: all 500ms ease-in-out;
+}
+.page-up-arrow:after{
+	content: '';
+	font-size: 6px;
+    display: block;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    opacity: 0.2;
+}
+.page-up-arrow:hover:after{
+	content:"I'm going back to the start!";
+}
+
+.page-up-arrow-contacts{
+	position: absolute;
+	right: 0px;
+}
+
+.arrow-down, .arrow-up{
+	width: 66px;
+	height: auto;
+	cursor: pointer;
+	transition: all 500ms ease-in-out;
+
+}
+
+.arrow-down:hover, .arrow-up:hover{
+	opacity: 0.5;
+}
+
+/*media queries*/
+@media only screen and (min-width: 768px){
+	.main-content .main-row{
+		padding: 6% 15% 0% 15%;
+	}
+	.fspage{
+		padding: 4.5em;
+	}
+}
+
+
+
+@media only screen and (min-width: 992px){
+	.main-content .title, .title-80s:before, .title-80s:after{
+		font-size: 58px;
+	}
+	.main-content .sub-title{
+		font-size: 30px;
+	}
+
+	.main-content .main-text{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.main-content .main-row{
+		margin-top: 10px;
+	}
+	.page-up-arrow:after{
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.main-content .main-row{
+		padding: 6% 20% 0% 20%; 
+	}
+	.main-content .title, .title-80s:before, .title-80s:after {
+		font-size: 70px;
+	}
+}
+
+.main-content .title{
+	z-index: 1;
+}

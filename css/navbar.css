@@ -1,0 +1,58 @@
+@keyframes navbar-down{
+	0% {top: -200px;}
+	100% {top:0px;}
+}
+
+@keyframes navbar-up{
+	0% {top: 0px;}
+	100% {top:-200px;}
+}
+
+.nav-bar-top{
+	position: absolute;
+    z-index: 999;
+    right: 20px;
+    animation: navbar-down;
+    animation-duration: 2000ms;
+}
+
+.nav-bar-top-hide{
+	position: absolute;
+    z-index: 999;
+    right: 20px;
+	animation: navbar-up;
+    animation-duration: 2000ms;
+}
+
+.nav-bar-top li, .nav-bar-top-hide li {
+	display: inline-block;
+	writing-mode: tb-rl;
+	text-orientation: upright;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	vertical-align: top;
+	transition: all 500ms ease-in-out;
+	height: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    color: white;
+    text-shadow: 3px 1px 5px #5C5C5C;
+    background: rgba(92,92,92,0.6)
+}
+
+.nav-bar-top li.about-button:hover, .nav-bar-top li.contacts-button:hover{
+	height: 300px;
+	transition: all 500ms ease-in-out;
+}
+
+.nav-bar-top li.about-button:hover{
+    box-shadow: 1px 1px 2px rgba(118,96,241,0.2);
+    background: rgba(92,92,92,0.3);
+}
+
+.nav-bar-top li.contacts-button:hover{
+    box-shadow: 1px 1px 2px rgba(241,96,96,0.2);
+    background: rgba(92,92,92,0.3);
+}

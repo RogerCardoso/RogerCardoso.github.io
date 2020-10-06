@@ -1,0 +1,162 @@
+	<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Roger Cardoso - Front-End Dev</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/aboutme.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+
+
+
+
+</head>
+<body>
+	<!-- Hide Header -->
+	<header id="header-nav" class="nav-bar-top" data-title="Web, Front-End, JavaScript Developer">
+		<nav id="main-nav-bar" class="d-none d-md-block">
+			<ul>
+				<a onclick="slideTo('#slide-helper');">
+					<li class="about-button" >About me</li>
+				</a>
+				<a onclick="slideToContacts('#slide-helper');">
+					<li class="contacts-button">Contacts</li>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<!-- Main content -->
+	<div class="full-screen-pages">
+		<section id="home" class="fspage main-content active">
+			<div id="gradient-bg-animation"></div>
+			<div class="container">
+				<div class="row main-row">
+						<div class="col-12 title animated-shadow">
+							<h2 class="title title-80s" id="typewrite">Roger Cardoso</h2>
+							<h2 class="sub-title typewrite" data-period="2000" data-type='["Front-End Web Developer.", "Web Designer.", "JavaScript programmer.", "Tech lover.", "Hmm... Gamer?", ""]'></h2>
+						</div>
+				</div>
+			</div>
+			<a onclick="slideTo('#slide-helper')"><span class="page-down-arrow"><img class="arrow-down" src="./img/arrow_down.svg"></span></a>
+		</section>
+
+		<section id="about" class="fspage about-me">
+			<div id="bg-fade"></div>
+			
+			<div class="container">
+				<span id="hurry-button">C'mon, I'm-in-a-hurry!!!</span>
+				<p class="hide-for-hurry">I always loved tech. I remember when I was 8 years old and I saw a friend playing a Mega Drive. It was very shy and didn't asked to play, but the idea of a video-game, take a controller and be whatever I want took my mind for days. I knew that my mother coudn't buy one for me and I didn't ask, but gosh! I reallywanted. A couple of years later, my father gave me a Super Nintendo and this is where my passion almost became an addiction. Super Nintendos were very resistant, because I pushed mine to the limit!</p>
+				<p class="hide-for-hurry">Years later, internet was growing so much and online games became really popular. I played Tibia, Ragnarok, Mu Online, and the list goes on and on. But my connection to coding started the "wrong" way. My pleasure in most of those games were "hacking" them. I know its wrong, but I was a child and this feeling of "being smarter and cooler than the guy who did the game" was really amazing, I must confess. But it was only an avocation. Me and my friends learned so much of C, Delphi, even Pascal (who remembers?) all by ourselves and with no documentation at all. Internet wasn't like it is today and Stack Overflow didn't exist (it was dark days).</p>
+				<p class="hide-for-hurry">I was getting older and the time to decide what to do after school has arrived. At the beggining, I knew that IT was my certain path, but I was living away from capital and I woudn't get a job there. So I made a different decision an thought: engineering as my payable work and IT continues as my hobby. And I didn't want to turn my real passion in something boring or corrupted by routine as well.</p>
+				<p><span class="hide-for-hurry">And then </span>I <spanclass="hide-for-hurry">finished my Production Engineering graduation and </span>started my career path as a <b>planner, scheduler and controller</b> of maintenance in oil and gas platforms (yes, over the sea!). As a <b>Planner Engineer</b>, I was responsible for improve production processes, KPI management, ensure safety of our employees, reduce costs and, the harder and most beautiful part, estimate a timescale for a project to ensure that the outlined deadlines are met. For the last one, I <b>specialized in project management softwares, like Microsoft Project and Primavera P6</b>.</p>
+				<p>With almost 5 years of experience, more than 20 platforms explored, I became the responsible for the planner team. As a Coordinator, I was responsible for bigger roles, like projects feasibility, medium and long-terms plans, presentations to potential clients, search for new businesses and etc.</p>
+				<p>At the end of 2017, I pushed the reset button. Decided change my career and start at IT. I wasn't really happy there and there were so many possibilites in Europe. With my european citizenship, I could restart here. I was studiyng a lot of HTML, CSS and Javascript. As a planner for years, Agile Methods became are my weakness and I started to study a lot of Scrum too.</p>
+				<p>After months of study, I took a Scrum Master certification at <a class="scrum-link" target="_blank" href="https://drive.google.com/file/d/1UBKTSgJuedr3Ie11fJsWaaOReOxAobwv/view">scrum.org</a> and started making websites for free, to train and apply all skills that I learned. After gaining confidence, I applied for some jobs and got one (yes!). Nowadays, with almost 2 years dedicated to Front End, <b>I work as a full time Web Developer</b> with almost <b>1 year of professional experience</b>, using a lot of <b>CSS and HTML, some JavaScript</b>, and <b>immersed in studying React</b>. I always try to be in touch with the community and contribute when I am able.</p>
+			</div>
+			<a onclick="slideTo('#slide-helper')"><span class="page-down-arrow"><img class="arrow-down" src="./img/arrow_down.svg"></span></a>
+		</section>
+	</div>
+	<div id="slide-helper" class="contacts">
+		<div class="container">
+			<a onclick="slideTo('#home')" class="page-up-arrow-contacts"><span class="page-up-arrow"><img class="arrow-up" src="./img/arrow_up.svg"></span></a>
+			<div class="row">		
+				<div class="contact-mail col-12 offset-md-3 col-md-7 offset-lg-4 col-lg-6">
+					<a href="mailto:rogerdeandrade@gmail.com" target="_blank">
+						<i class="fas fas fa-envelope-square"></i>
+						<p>Mail: rogerdeandrade@gmail.com</p>
+					</a>
+				</div>
+				<div class="contact-tel col-12 offset-md-3 col-md-7 offset-lg-4 col-lg-6">
+					<a href="tel:+351913203305" target="_blank">
+						<i class="fas fa-mobile-alt"></i>
+						<p>  Phone: +351 913 203 305</p>
+					</a>
+				</div>
+				<div class="contact-skype col-12 offset-md-3 col-md-7 offset-lg-4 col-lg-6">
+					<a href="skype:live:rogerdeandrade_1?call" target="_blank">
+						<i class="fab fa-skype"></i>
+						<p>Skype: rogerdeandrade_1</p>
+					</a>
+				</div>
+				<div class="contact-messenger col-12 offset-md-3 col-md-7 offset-lg-4 col-lg-6">
+					<a href="https://www.messenger.com/t/roger.a.cardoso" target="_blank">
+						<i class="fab fa-facebook-messenger"></i>
+						<p>Messenger: roger.a.cardoso</p>
+					</a>
+				</div>
+				<div class="contact-end">
+					<p>For more details about my certifications and experiences, you can download <a href="https://drive.google.com/file/d/1Xqo-xYoGDhFuCLVvkU2XHE2O15bshl2q/view?usp=sharing" target="_blank">my CV</a>.</p>
+					<p>If you have any further questions, please don’t hesitate to contact me.</p>
+					<p>Thanks for visiting!</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--<a id="mobile-menu-button" class="d-md-none" onclick="slideMenuDown();" style="position: fixed;bottom: 20px;left: 45%;z-index: 999;">MENU</a>-->
+	<!-- Footer Links -->
+	<footer>
+		<ul class="footer-links">
+			<a class="footer-link-unit" target="_blank" href="https://www.instagram.com/r0gercardoso/">
+				<li class="box-link">
+					<div class="box box-1">
+						Instagram<span class="fab fa-instagram" id="instagram"></span>
+					</div>
+				</li>
+			</a>
+			<a class="footer-link-unit" target="_blank" href="https://www.linkedin.com/in/roger-cardoso-39239732/">
+			<li class="box-link">
+				<div class="box box-2">
+					Linkedin<span class="fab fa-linkedin" id="linkedin"></span>
+				</div>
+			</li>
+			</a>
+			<a class="footer-link-unit" target="_blank" href="https://www.facebook.com/roger.a.cardoso">
+				<li class="box-link">
+					<div class="box box-3">
+						Facebook<span class="fab fa-facebook-square" id="instagram"></span>
+					</div>
+				</li>
+			</a>
+			<a class="footer-link-unit" target="_blank" href="https://github.com/RogerCardoso">
+				<li class="box-link">
+					<div class="box box-4">
+						Github<span class="fab fa-github-square" id="instagram"></span>
+					</div>
+				</li>
+			</a>
+		</ul>
+		<div id="preloader">
+			<img src="./img/stars-bg2.jpg" width="1" height="1" />
+			<img src="./img/stars-bg3.jpg" width="1" height="1" />
+		</div>
+	</footer>
+	
+	
+
+
+
+
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/stacked_pages.js"></script>
+	<script src="js/main.js"></script>
+</body>
+

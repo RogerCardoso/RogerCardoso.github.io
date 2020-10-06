@@ -1,0 +1,74 @@
+#slide-helper.contacts{
+	background: url('../img/stars-bg3.jpg');
+	background-attachment: fixed;
+	background-size: 100% auto;
+	padding-top: 30px;
+	z-index: -1;
+}
+
+.contacts-bg-animation{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*.contacts .container{
+	background-color: rgba(50, 50, 50, 0.5);
+}*/
+
+.contacts{
+	text-align: center;
+}
+
+.contacts p{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 30px;
+	display: inline-block;
+}
+
+.contacts i{
+	font-size: 40px;
+    display: block;
+    color: white;
+    margin-right: 20px;
+}
+
+.contact-tel i{
+	margin-left: 6px;
+	margin-right: 22px;
+}
+
+.contacts a:hover, .contacts p:hover, .contacts i:hover{
+	text-decoration: none;
+	opacity: 0.5;
+	transition: all 500ms ease;
+}
+
+.contact-end{
+	margin: auto;
+	margin-top: 100px;
+}
+
+.contact-end p{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+@media only screen and (min-width: 768px){
+	.contacts{
+		text-align: left;
+	}
+	.contact-end p{
+		font-size: 20px;
+	}
+	.contacts i{
+	    display: inline-block;
+	}
+}

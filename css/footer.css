@@ -1,0 +1,140 @@
+@keyframes footer-animation-mobile{
+	0% {left: 0%;}
+	100%{left: -140px;}
+}
+
+@keyframes footer-animation{
+	0% {left: 0%;}
+	100%{left: -200px;}
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+	height: 38%;
+	background: #696969;
+	z-index: 999;
+}
+footer .footer-links{
+	z-index: 100;
+	height: 100%;
+	margin: 0;
+	position: fixed;
+}
+footer .box-link{
+	height: 30px;
+}
+
+footer .box{
+	background: rgba(92,92,92,0.6);
+	width: 180px;
+	height: 26px;
+	float: left;
+	position: absolute;
+	left: -140px;
+	text-align: right;
+	border: 0px;
+	line-height: 100%;	
+	transition: all 0.5s ease-in-out;
+	animation: footer-animation-mobile;
+	animation-duration: 1500ms;
+}
+
+footer .box:hover{
+	left: 0%;
+	text-align: center;
+	text-shadow: 1px 1px 5px #5D5D5D;
+	transition: all 0.5s ease-in-out;
+	background: rgba(92,92,92,0.3);
+}
+
+footer .box:hover *{
+	text-shadow: 1px 1px 5px #5D5D5D;
+	transition: all 0.5s ease-in-out;
+} 
+
+footer .footer-link-unit{
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: 'Montserrat', serif;
+	text-shadow: 1px 1px 5px black;
+	left: 0%;
+	height: 100%;
+	vertical-align: middle;
+}
+footer .footer-link-unit:hover{
+	text-decoration: none;
+    color: white;
+}
+
+footer .fab{
+	color: #F5F5F5;
+	font-size: 18px;
+	margin-left: 20px;
+	margin-right: 5px;
+	text-shadow: 1px 1px 5px black;	
+	height: 100%;
+	vertical-align: middle;
+	padding-top: 3px;
+}
+
+/*Adjust footer to bigger phones*/
+
+@media only screen and (min-height: 400px){
+	footer {
+		height: 40%;
+	}
+}
+
+/*Adjust footer to small screens in portrait mode*/
+@media only screen and (min-height: 600px) {
+	footer .box-link {
+	height: 40px;
+	}
+
+	footer .box {
+		height: 36px;
+	}
+
+	footer .footer-link-unit {
+		width: 220px;
+		height: 100%;
+		font-size: 22px;
+	}
+
+	footer .fab {
+		font-size: 26px;
+		padding-top: 6px;
+	}	
+}
+
+/*Adjust footer to bigger screens*/
+
+@media only screen and (min-height: 600px) and (min-width: 600px) {
+	footer .box-link {
+		height: 50px;
+	}
+
+	footer .box {
+		height: 46px;
+		width: 240px;
+		left: -200px;
+		animation: footer-animation;
+		animation-duration: 1500ms;
+	}
+
+	footer .footer-link-unit {
+		width: 100%;
+		height: 100%;
+		font-size: 24px;
+	}
+
+	footer .fab {
+		font-size: 30px;
+		padding-top: 6px;
+	}	
+}
+
